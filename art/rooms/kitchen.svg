@@ -1,0 +1,95 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- ห้องครัว: ช่องหน้าต่าง (x110 y70 กว้าง210 สูง176) เป็นรู โปร่งใส -->
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#FFF1D6"/><stop offset="1" stop-color="#F8DFB4"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E6D3B6"/><stop offset="1" stop-color="#D4BC98"/></linearGradient>
+  </defs>
+  <path fill="url(#wall)" fill-rule="evenodd" d="M0 0H800V340H0Z M110 70V246H320V70Z"/>
+  <!-- กระเบื้องผนังหลังเคาน์เตอร์ -->
+  <rect x="360" y="170" width="440" height="120" fill="#FFFAF0"/>
+  <g stroke="#E8D9BC" stroke-width="1.5">
+    <path d="M360 200H800M360 230H800M360 260H800"/>
+    <path d="M400 170V290M440 170V290M480 170V290M520 170V290M560 170V290M600 170V290M640 170V290M680 170V290M720 170V290M760 170V290"/>
+  </g>
+  <rect y="338" width="800" height="9" fill="#B89868"/>
+  <rect y="346" width="800" height="154" fill="url(#floor)"/>
+  <!-- กระเบื้องพื้นลายหมากรุก -->
+  <g fill="#F3E6CE" opacity=".75">
+    <path d="M0 346H70V372H0Z M140 346H210V372H140Z M280 346H350V372H280Z M420 346H490V372H420Z M560 346H630V372H560Z M700 346H770V372H700Z"/>
+    <path d="M70 372H140V402H70Z M210 372H280V402H210Z M350 372H420V402H350Z M490 372H560V402H490Z M630 372H700V402H630Z M770 372H800V402H770Z"/>
+    <path d="M0 402H70V436H0Z M140 402H210V436H140Z M280 402H350V436H280Z M420 402H490V436H420Z M560 402H630V436H560Z M700 402H770V436H700Z"/>
+    <path d="M70 436H140V474H70Z M210 436H280V474H210Z M350 436H420V474H350Z M490 436H560V474H490Z M630 436H700V474H630Z M770 436H800V474H770Z"/>
+    <path d="M0 474H70V500H0Z M140 474H210V500H140Z M280 474H350V500H280Z M420 474H490V500H420Z M560 474H630V500H560Z M700 474H770V500H700Z"/>
+  </g>
+
+  <!-- กรอบหน้าต่าง + ผ้าม่านลายตารางแดง -->
+  <path fill="#FFF8EA" stroke="#B89868" stroke-width="2" fill-rule="evenodd" d="M96 56H334V260H96Z M110 70V246H320V70Z"/>
+  <rect x="211" y="70" width="8" height="176" fill="#FFF8EA" stroke="#B89868" stroke-width="1.5"/>
+  <rect x="86" y="252" width="258" height="12" rx="3" fill="#FFF8EA" stroke="#B89868" stroke-width="1.5"/>
+  <path d="M84 70H334V96Q310 110 284 96Q258 110 232 96Q206 110 180 96Q154 110 128 96Q106 108 84 96Z" fill="#E0607E"/>
+  <path d="M84 70H334V80H84Z" fill="#C9485F"/>
+  <!-- กระถางสมุนไพรบนขอบหน้าต่าง -->
+  <path d="M110 252L114 234H134L138 252Z" fill="#D98A7A"/><path d="M118 234Q112 214 122 206Q124 222 128 234M126 234Q132 216 144 212Q140 226 130 234" fill="#5FA777"/>
+  <path d="M170 252L174 236H192L196 252Z" fill="#D98A7A"/><circle cx="183" cy="226" r="12" fill="#6DBB82"/>
+
+  <!-- ชั้นลอยและถ้วยจาน -->
+  <rect x="380" y="96" width="380" height="8" rx="3" fill="#B89868"/>
+  <g>
+    <ellipse cx="420" cy="92" rx="22" ry="6" fill="#9FD3C7"/><ellipse cx="420" cy="86" rx="22" ry="6" fill="#B8E2D8"/>
+    <path d="M470 60H500V96H470Z" fill="#F2C94C"/><rect x="470" y="56" width="30" height="8" rx="3" fill="#E0B23A"/>
+    <path d="M520 66H550V96H520Z" fill="#E0607E"/><rect x="520" y="62" width="30" height="8" rx="3" fill="#C9485F"/>
+    <path d="M570 70H600V96H570Z" fill="#9FB8D9"/><rect x="570" y="66" width="30" height="8" rx="3" fill="#7F9CC4"/>
+    <circle cx="660" cy="80" r="16" fill="#FFF8EA" stroke="#CDB088" stroke-width="2"/><circle cx="660" cy="80" r="9" fill="none" stroke="#E0607E" stroke-width="3"/>
+    <circle cx="716" cy="80" r="16" fill="#FFF8EA" stroke="#CDB088" stroke-width="2"/><circle cx="716" cy="80" r="9" fill="none" stroke="#9FB8D9" stroke-width="3"/>
+  </g>
+  <!-- ราวแขวนเครื่องครัว -->
+  <path d="M390 130H750" stroke="#8A6A4A" stroke-width="3"/>
+  <g fill="#8A6A4A"><path d="M410 130V158Q410 168 418 168" fill="none" stroke="#8A6A4A" stroke-width="3"/>
+  <g class="a-swing" style="transform-origin:452px 130px"><ellipse cx="452" cy="156" rx="16" ry="18" fill="#B0B6BD"/><rect x="450" y="130" width="4" height="10"/></g>
+  <g class="a-swing b" style="transform-origin:510px 130px"><path d="M510 130V172" stroke="#8A6A4A" stroke-width="4"/><ellipse cx="510" cy="178" rx="9" ry="12" fill="#B0B6BD"/></g>
+  <g class="a-swing c" style="transform-origin:576px 130px"><circle cx="576" cy="160" r="20" fill="#9FB8D9" stroke="#7F9CC4" stroke-width="3"/><rect x="574" y="130" width="4" height="12"/></g></g>
+
+  <!-- เคาน์เตอร์ยาว + ซิงก์ + เตา -->
+  <rect x="360" y="290" width="440" height="58" fill="#F4E4C4"/>
+  <rect x="360" y="290" width="440" height="58" fill="none" stroke="#CDB088" stroke-width="2"/>
+  <path d="M400 290V348M520 290V348M640 290V348M760 290V348" stroke="#CDB088" stroke-width="2"/>
+  <g fill="#CDB088"><circle cx="460" cy="320" r="4"/><circle cx="580" cy="320" r="4"/><circle cx="700" cy="320" r="4"/></g>
+  <rect x="352" y="274" width="456" height="20" rx="5" fill="#9FB8D9"/>
+  <rect x="352" y="274" width="456" height="6" rx="3" fill="#B8CCE6"/>
+  <!-- ซิงก์ -->
+  <rect x="380" y="262" width="96" height="14" rx="4" fill="#B0B6BD"/><path d="M426 262V238Q426 230 438 230H446" fill="none" stroke="#8D949C" stroke-width="6" stroke-linecap="round"/>
+  <!-- เตา -->
+  <rect x="560" y="254" width="130" height="22" rx="4" fill="#4A4F57"/>
+  <ellipse cx="596" cy="258" rx="22" ry="6" fill="#2F3338"/><ellipse cx="654" cy="258" rx="22" ry="6" fill="#2F3338"/>
+  <path d="M576 252H616L612 224H580Z" fill="#E0607E"/><rect x="570" y="220" width="52" height="8" rx="4" fill="#C9485F"/>
+  <path d="M636 254H672L668 232H640Z" fill="#B0B6BD"/><rect x="634" y="228" width="40" height="6" rx="3" fill="#8D949C"/>
+
+  <!-- ชามข้าวแมว (มุมขวาล่างของเคาน์เตอร์) -->
+  <ellipse cx="720" cy="402" rx="40" ry="11" fill="#7F9CC4"/>
+  <path d="M684 396Q720 384 756 396Q752 414 720 418Q688 414 684 396Z" fill="#9FB8D9"/>
+  <ellipse cx="720" cy="396" rx="30" ry="7" fill="#F2C94C"/>
+  <path d="M708 400h24" stroke="#FFF8EA" stroke-width="2" opacity=".7"/>
+  <!-- พรมหน้าเคาน์เตอร์ -->
+  <rect x="440" y="372" width="200" height="26" rx="8" fill="#E0607E"/>
+  <rect x="448" y="376" width="184" height="18" rx="5" fill="none" stroke="#FFD0D8" stroke-width="2" stroke-dasharray="8 6"/>
+
+  <!-- โต๊ะกินข้าวเล็กด้านซ้าย -->
+  <ellipse cx="190" cy="408" rx="86" ry="22" fill="#B98757"/>
+  <ellipse cx="190" cy="402" rx="86" ry="22" fill="#D4A06E"/>
+  <rect x="184" y="408" width="12" height="40" fill="#A8774F"/>
+  <ellipse cx="190" cy="448" rx="30" ry="7" fill="#A8774F"/>
+  <ellipse cx="160" cy="398" rx="22" ry="5" fill="#FFF8EA"/><ellipse cx="220" cy="398" rx="22" ry="5" fill="#FFF8EA"/>
+  <path d="M184 384Q190 368 196 384Z" fill="#E0607E"/><rect x="188" y="384" width="4" height="12" fill="#5FA777"/>
+  <!-- คานไม้เพดาน -->
+  <rect y="0" width="800" height="12" fill="#A8774F"/><rect y="12" width="800" height="3" fill="#8A5F3C" opacity=".6"/>
+  <!-- โคมไฟแขวน -->
+  <g class="a-pendant"><line x1="600" y1="15" x2="600" y2="24" stroke="#5A4030" stroke-width="2"/><path d="M582 44 Q600 18 618 44Z" fill="#E8893A" stroke="#B5652A" stroke-width="2"/><ellipse cx="600" cy="45" rx="7" ry="3" fill="#FFE9A8"/></g>
+  <!-- สมุนไพรแขวนข้างหน้าต่าง -->
+  <g class="a-hang"><line x1="356" y1="40" x2="356" y2="70" stroke="#8A6A4A" stroke-width="1.5"/><path d="M350 70 q6 -4 12 0 l-2 26 q-4 3 -8 0z" fill="#7C9F6A"/><path d="M346 76 q10 4 20 0" stroke="#C9A27E" stroke-width="3"/></g>
+  <!-- เบาะนอนแมว -->
+  <g><ellipse cx="730" cy="458" rx="48" ry="16" fill="#C98B5E" stroke="#9A6B43" stroke-width="2"/><ellipse cx="730" cy="454" rx="36" ry="10" fill="#F4D9C0"/>
+    <path d="M700 452 q30 -6 60 0" fill="none" stroke="#E8C3A0" stroke-width="2"/></g>
+  <!-- ขอบห้องมืดลงนิดๆ ให้ดูอบอุ่น -->
+  <defs><radialGradient id="vg" cx="50%" cy="45%" r="75%"><stop offset=".6" stop-color="#3A2010" stop-opacity="0"/><stop offset="1" stop-color="#3A2010" stop-opacity=".22"/></radialGradient></defs>
+  <rect width="800" height="500" fill="url(#vg)"/>
+</svg>

@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 196" width="230" height="196" preserveAspectRatio="xMidYMid slice">
+  <style>
+    .p{fill:#FFC4D6;animation:drift 5s linear infinite}
+    .p:nth-child(2n){animation-duration:6.5s;animation-delay:-2s}.p:nth-child(3n){animation-duration:4.2s;animation-delay:-1s}
+    @keyframes drift{from{transform:translate(0,-20px) rotate(0)}to{transform:translate(-40px,210px) rotate(200deg)}}
+    @media (prefers-reduced-motion: reduce){.p{animation:none}}
+  </style>
+  <defs><linearGradient id="sp" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#A9DDF2"/><stop offset="1" stop-color="#E4F6FB"/></linearGradient></defs>
+  <rect width="230" height="196" fill="url(#sp)"/>
+  <path d="M0 136Q60 112 120 132T230 122V196H0Z" fill="#BDE5A5"/>
+  <path d="M0 160Q80 140 150 158T230 152V196H0Z" fill="#9CD688"/>
+  <path d="M120 170Q122 130 128 100M128 100Q150 80 170 62M128 104Q100 88 84 70" stroke="#7A5638" stroke-width="9" stroke-linecap="round" fill="none"/>
+  <g fill="#FFB3CB"><circle cx="90" cy="64" r="22"/><circle cx="120" cy="50" r="26"/><circle cx="158" cy="54" r="24"/><circle cx="176" cy="78" r="18"/><circle cx="70" cy="86" r="16"/><circle cx="140" cy="82" r="20"/></g>
+  <g fill="#FFD3E1" opacity=".9"><circle cx="106" cy="58" r="12"/><circle cx="150" cy="44" r="13"/><circle cx="84" cy="74" r="9"/></g>
+  <g>
+    <ellipse class="p" cx="40" cy="10" rx="4" ry="2.5"/><ellipse class="p" cx="80" cy="0" rx="4" ry="2.5"/><ellipse class="p" cx="130" cy="6" rx="4" ry="2.5"/>
+    <ellipse class="p" cx="170" cy="-6" rx="4" ry="2.5"/><ellipse class="p" cx="210" cy="4" rx="4" ry="2.5"/><ellipse class="p" cx="110" cy="-12" rx="4" ry="2.5"/>
+  </g>
+</svg>

@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 230 196" width="230" height="196" preserveAspectRatio="xMidYMid slice">
+  <style>
+    .d{stroke:#BFD8EA;stroke-width:1.6;stroke-linecap:round;opacity:.75;animation:fall 0.9s linear infinite}
+    .d:nth-child(2n){animation-duration:1.15s;animation-delay:-.4s}.d:nth-child(3n){animation-duration:.8s;animation-delay:-.2s}
+    @keyframes fall{from{transform:translate(0,-30px)}to{transform:translate(-10px,200px)}}
+    @media (prefers-reduced-motion: reduce){.d{animation:none}}
+  </style>
+  <defs><linearGradient id="r" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#3B5670"/><stop offset="1" stop-color="#7F9DB5"/></linearGradient></defs>
+  <rect width="230" height="196" fill="url(#r)"/>
+  <g fill="#566F86"><ellipse cx="50" cy="40" rx="50" ry="22"/><ellipse cx="130" cy="30" rx="60" ry="24"/><ellipse cx="205" cy="48" rx="46" ry="20"/></g>
+  <path d="M0 140Q60 118 120 136T230 128V196H0Z" fill="#5C7D6A"/>
+  <path d="M0 162Q80 142 150 160T230 154V196H0Z" fill="#4A6A58"/>
+  <rect x="170" y="116" width="6" height="40" fill="#3E3A33"/><circle cx="173" cy="108" r="20" fill="#3F6B55"/>
+  <g>
+    <line class="d" x1="20" y1="10" x2="14" y2="26"/><line class="d" x1="52" y1="0" x2="46" y2="16"/><line class="d" x1="84" y1="14" x2="78" y2="30"/>
+    <line class="d" x1="116" y1="4" x2="110" y2="20"/><line class="d" x1="148" y1="16" x2="142" y2="32"/><line class="d" x1="180" y1="2" x2="174" y2="18"/>
+    <line class="d" x1="210" y1="12" x2="204" y2="28"/><line class="d" x1="36" y1="40" x2="30" y2="56"/><line class="d" x1="100" y1="44" x2="94" y2="60"/>
+    <line class="d" x1="196" y1="48" x2="190" y2="64"/>
+  </g>
+</svg>

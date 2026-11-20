@@ -1,0 +1,67 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- สวน: ช่องโค้งในแนวพุ่มไม้ (x110 y70 กว้าง210 สูง176) เป็นรู โปร่งใส เห็นวิวตามฤดู -->
+  <defs>
+    <linearGradient id="sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFE6F5"/><stop offset="1" stop-color="#E6F6EE"/></linearGradient>
+    <linearGradient id="grass" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#8FCB7A"/><stop offset="1" stop-color="#6DB168"/></linearGradient>
+  </defs>
+  <!-- ท้องฟ้าและพุ่มไม้หลังฉาก (เจาะรูโค้ง) -->
+  <path fill="url(#sky)" fill-rule="evenodd" d="M0 0H800V340H0Z M110 246V150Q110 70 215 70Q320 70 320 150V246Z"/>
+  <path fill="#4F9A5B" fill-rule="evenodd" d="M0 150Q60 120 130 140Q200 110 280 140Q360 108 440 138Q520 106 600 136Q680 110 800 140V345H0Z M110 246V150Q110 70 215 70Q320 70 320 150V246Z"/>
+  <path fill="#5FB06A" d="M0 200Q80 170 160 196Q240 168 320 198Q400 168 480 196Q560 168 640 198Q720 170 800 196V345H0Z" opacity=".0"/>
+  <g fill="#5FB06A"><circle cx="60" cy="200" r="38"/><circle cx="380" cy="196" r="40"/><circle cx="470" cy="176" r="34"/><circle cx="560" cy="204" r="42"/><circle cx="660" cy="180" r="36"/><circle cx="750" cy="206" r="40"/></g>
+  <g fill="#E0607E"><circle cx="48" cy="190" r="5"/><circle cx="72" cy="214" r="5"/><circle cx="392" cy="186" r="5"/><circle cx="560" cy="196" r="5"/><circle cx="668" cy="170" r="5"/></g>
+  <!-- ซุ้มโค้ง -->
+  <path d="M96 252V150Q96 56 215 56Q334 56 334 150V252" fill="none" stroke="#FFF8EA" stroke-width="14" stroke-linecap="round"/>
+  <path d="M96 252V150Q96 56 215 56Q334 56 334 150V252" fill="none" stroke="#B89868" stroke-width="2.5" stroke-linecap="round" transform="translate(0 0)"/>
+  <g fill="#F2A6B8"><circle cx="110" cy="96" r="7"/><circle cx="150" cy="68" r="7"/><circle cx="215" cy="56" r="7"/><circle cx="282" cy="68" r="7"/><circle cx="320" cy="98" r="7"/><circle cx="98" cy="150" r="7"/><circle cx="332" cy="152" r="7"/></g>
+  <g fill="#5FB06A"><circle cx="126" cy="80" r="6"/><circle cx="182" cy="60" r="6"/><circle cx="248" cy="60" r="6"/><circle cx="305" cy="80" r="6"/></g>
+  <!-- รั้วไม้ -->
+  <rect x="0" y="288" width="800" height="8" fill="#FFF8EA" stroke="#CDB088"/>
+  <rect x="0" y="318" width="800" height="8" fill="#FFF8EA" stroke="#CDB088"/>
+  <g fill="#FFF8EA" stroke="#CDB088"><path d="M360 270h14v76h-14zM440 270h14v76h-14zM520 270h14v76h-14zM600 270h14v76h-14zM680 270h14v76h-14zM760 270h14v76h-14z"/></g>
+  <!-- สนามหญ้า -->
+  <rect y="340" width="800" height="160" fill="url(#grass)"/>
+  <g stroke="#7BBE70" stroke-width="2" opacity=".8" stroke-linecap="round">
+    <path d="M60 380l4-10M64 380l-1-12M70 380l3-9M160 440l4-10M166 440l-2-12M300 392l3-10M306 392l-1-10M420 470l4-10M426 470l-2-12M560 436l4-10M690 392l3-10M696 392l-1-10M740 470l4-10"/>
+  </g>
+  <!-- ทางเดินหิน -->
+  <g fill="#D9D2C2" stroke="#BDB5A2" stroke-width="2"><ellipse cx="260" cy="470" rx="34" ry="10"/><ellipse cx="350" cy="486" rx="34" ry="9"/><ellipse cx="230" cy="420" rx="26" ry="8"/></g>
+
+  <!-- แปลงดอกไม้ด้านซ้าย -->
+  <ellipse cx="170" cy="414" rx="130" ry="30" fill="#9B6B43"/>
+  <ellipse cx="170" cy="408" rx="130" ry="30" fill="#B07A4C"/>
+  <g stroke="#8A5A33" stroke-width="2" fill="none" opacity=".6"><path d="M70 410Q120 400 170 410T270 410"/><path d="M82 424Q130 416 170 424T258 424"/></g>
+  <g class="a-flowers"><g stroke="#5FA777" stroke-width="3" fill="none" stroke-linecap="round"><path d="M96 410V386M130 416V392M170 412V382M210 416V390M244 410V386"/></g>
+  <g><circle cx="96" cy="382" r="9" fill="#F2C94C"/><circle cx="130" cy="388" r="9" fill="#E0607E"/><circle cx="170" cy="378" r="10" fill="#F2A6B8"/><circle cx="210" cy="386" r="9" fill="#9FB8D9"/><circle cx="244" cy="382" r="9" fill="#FFF8EA"/></g>
+  <g fill="#FFF8EA"><circle cx="96" cy="382" r="3"/><circle cx="130" cy="388" r="3"/><circle cx="170" cy="378" r="3.5"/><circle cx="210" cy="386" r="3"/></g></g>
+
+  <!-- บ่อปลาด้านขวา -->
+  <ellipse cx="620" cy="418" rx="132" ry="38" fill="#B8AE98"/>
+  <ellipse cx="620" cy="412" rx="132" ry="38" fill="#CFC6B0"/>
+  <ellipse cx="620" cy="412" rx="112" ry="29" fill="#6FB8D9"/>
+  <ellipse cx="620" cy="408" rx="86" ry="19" fill="#8CCBE6" opacity=".8"/>
+  <g class="a-ripple" stroke="#E8F6FC" stroke-width="2.5" fill="none" stroke-linecap="round" opacity=".8"><path d="M560 410Q580 402 600 410"/><path d="M640 418Q660 410 680 418"/></g>
+  <ellipse cx="660" cy="398" rx="16" ry="6" fill="#5FB06A"/><circle cx="660" cy="394" r="6" fill="#F2A6B8"/>
+  <path d="M580 414q12-8 26 0q-12 8-26 0z" fill="#F2A65A"/><path d="M606 414l8-6v12z" fill="#F2A65A"/>
+  <!-- เบ็ดตกปลาพิงขอบบ่อ -->
+  <path d="M520 420L498 336" stroke="#8A6A4A" stroke-width="4" stroke-linecap="round"/>
+  <!-- ไฟประดับเหนือรั้ว + โคมบนเสา -->
+  <path d="M0 262 Q100 290 200 266 Q300 292 400 268 Q500 292 600 268 Q700 292 800 264" stroke="#6B4A32" stroke-width="2" fill="none"/>
+  <g class="a-twinkle" fill="#FFE9A8" stroke="#C9A060" stroke-width="1"><circle cx="50" cy="276" r="5"/><circle cx="150" cy="278" r="5"/><circle cx="250" cy="280" r="5"/><circle cx="350" cy="278" r="5"/><circle cx="450" cy="280" r="5"/><circle cx="550" cy="280" r="5"/><circle cx="650" cy="280" r="5"/><circle cx="750" cy="276" r="5"/></g>
+  <g><rect x="756" y="268" width="8" height="90" fill="#6B4A32"/><rect x="746" y="246" width="28" height="26" rx="4" fill="#FFE9A8" stroke="#6B4A32" stroke-width="3"/><path d="M742 248 L760 234 L778 248Z" fill="#6B4A32"/></g>
+  <!-- ม้านั่งไม้ (แตะแล้วนั่งได้) -->
+  <g>
+    <ellipse cx="126" cy="384" rx="96" ry="7" fill="#2E4A22" opacity=".25"/>
+    <rect x="56" y="298" width="8" height="48" fill="#8A5F3C"/><rect x="188" y="298" width="8" height="48" fill="#8A5F3C"/>
+    <rect x="44" y="294" width="164" height="11" rx="4" fill="#B98757" stroke="#8A5F3C" stroke-width="2"/>
+    <rect x="44" y="312" width="164" height="11" rx="4" fill="#B98757" stroke="#8A5F3C" stroke-width="2"/>
+    <rect x="36" y="342" width="180" height="12" rx="4" fill="#C9955F" stroke="#8A5F3C" stroke-width="2"/>
+    <rect x="48" y="354" width="9" height="28" rx="2" fill="#8A5F3C"/><rect x="195" y="354" width="9" height="28" rx="2" fill="#8A5F3C"/>
+  </g>
+  <!-- ดอกไม้เล็กริมทาง -->
+  <g><circle cx="230" cy="488" r="4" fill="#F4B6C2"/><circle cx="246" cy="492" r="3.5" fill="#FFE08A"/><circle cx="560" cy="490" r="4" fill="#B5D1F2"/><circle cx="574" cy="486" r="3.5" fill="#F4B6C2"/>
+    <path d="M300 492 q4 -10 8 0z M312 494 q4 -12 8 0z" fill="#E0607E"/><path d="M302 494 h18" stroke="#F5F0E6" stroke-width="3"/></g>
+  <!-- ขอบห้องมืดลงนิดๆ ให้ดูอบอุ่น -->
+  <defs><radialGradient id="vg" cx="50%" cy="45%" r="75%"><stop offset=".6" stop-color="#3A2010" stop-opacity="0"/><stop offset="1" stop-color="#3A2010" stop-opacity=".22"/></radialGradient></defs>
+  <rect width="800" height="500" fill="url(#vg)"/>
+</svg>

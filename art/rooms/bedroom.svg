@@ -1,0 +1,97 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <!-- ห้องนอน: ช่องหน้าต่าง (x110 y70 กว้าง210 สูง176) เป็นรู โปร่งใส ภาพนอกหน้าต่างอยู่ชั้นหลัง -->
+  <defs>
+    <linearGradient id="wall" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#E9E1F3"/><stop offset="1" stop-color="#D9CFEA"/></linearGradient>
+    <linearGradient id="floor" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#C99B6E"/><stop offset="1" stop-color="#B98757"/></linearGradient>
+  </defs>
+
+  <!-- ผนังและพื้น (เจาะรูหน้าต่างด้วย evenodd) -->
+  <path fill="url(#wall)" fill-rule="evenodd" d="M0 0H800V340H0Z M110 70V246H320V70Z"/>
+  <rect y="250" width="800" height="92" fill="#CFC3E3"/>
+  <rect y="246" width="800" height="6" fill="#BBAED4"/>
+  <rect y="338" width="800" height="9" fill="#A8774F"/>
+  <rect y="346" width="800" height="154" fill="url(#floor)"/>
+  <g stroke="#B07F55" stroke-width="1.5" opacity=".7">
+    <line x1="0" y1="372" x2="800" y2="372"/><line x1="0" y1="402" x2="800" y2="402"/>
+    <line x1="0" y1="436" x2="800" y2="436"/><line x1="0" y1="474" x2="800" y2="474"/>
+    <line x1="150" y1="346" x2="150" y2="372"/><line x1="470" y1="346" x2="470" y2="372"/><line x1="660" y1="346" x2="660" y2="372"/>
+    <line x1="60" y1="372" x2="60" y2="402"/><line x1="300" y1="372" x2="300" y2="402"/><line x1="560" y1="372" x2="560" y2="402"/>
+    <line x1="210" y1="402" x2="210" y2="436"/><line x1="420" y1="402" x2="420" y2="436"/><line x1="700" y1="402" x2="700" y2="436"/>
+    <line x1="110" y1="436" x2="110" y2="474"/><line x1="380" y1="436" x2="380" y2="474"/><line x1="610" y1="436" x2="610" y2="474"/>
+  </g>
+
+  <!-- พรมหน้าเตียง -->
+  <ellipse cx="540" cy="408" rx="210" ry="36" fill="#9FB8D9"/>
+  <ellipse cx="540" cy="408" rx="176" ry="27" fill="none" stroke="#CFE0F3" stroke-width="3" stroke-dasharray="10 8"/>
+
+  <!-- กรอบหน้าต่าง -->
+  <path fill="#F4EEFA" stroke="#BBAED4" stroke-width="2" fill-rule="evenodd" d="M96 56H334V260H96Z M110 70V246H320V70Z"/>
+  <rect x="211" y="70" width="8" height="176" fill="#F4EEFA" stroke="#BBAED4" stroke-width="1.5"/>
+  <rect x="110" y="154" width="210" height="8" fill="#F4EEFA" stroke="#BBAED4" stroke-width="1.5"/>
+  <rect x="86" y="252" width="258" height="12" rx="3" fill="#F4EEFA" stroke="#BBAED4" stroke-width="1.5"/>
+  <!-- ผ้าม่าน -->
+  <g class="a-curtain a-l"><path d="M62 44H122V270Q92 276 62 270Z" fill="#A9B8D8"/>
+  <path d="M82 44V270M98 44V272" stroke="#8FA0C6" stroke-width="3" fill="none"/></g>
+  <g class="a-curtain a-r"><path d="M308 44H368V270Q338 276 308 270Z" fill="#A9B8D8"/>
+  <path d="M328 44V270M344 44V272" stroke="#8FA0C6" stroke-width="3" fill="none"/></g>
+  <rect x="52" y="38" width="326" height="8" rx="4" fill="#8A6A4A"/>
+
+  <!-- สายไฟประดับ -->
+  <path d="M390 40Q460 74 530 46Q600 78 670 48Q720 70 770 46" stroke="#8A6A4A" stroke-width="2" fill="none"/>
+  <g fill="#FFE9A8" class="a-twinkle">
+    <circle cx="420" cy="58" r="6"/><circle cx="465" cy="66" r="6"/><circle cx="510" cy="58" r="6"/><circle cx="560" cy="62" r="6"/>
+    <circle cx="610" cy="68" r="6"/><circle cx="655" cy="62" r="6"/><circle cx="705" cy="62" r="6"/><circle cx="748" cy="56" r="6"/>
+  </g>
+
+  <!-- รูปเหนือหัวเตียง: พระจันทร์และดาว -->
+  <rect x="520" y="96" width="76" height="92" rx="5" fill="#2F3A66" stroke="#8A6A4A" stroke-width="5"/>
+  <path d="M570 118A22 22 0 1 0 570 166A17 17 0 1 1 570 118Z" fill="#FFE9A8"/>
+  <circle cx="544" cy="124" r="3" fill="#FFF8EA"/><circle cx="582" cy="146" r="2.5" fill="#FFF8EA"/><circle cx="548" cy="174" r="2.5" fill="#FFF8EA"/>
+  <rect x="624" y="116" width="50" height="62" rx="4" fill="#FFF8EA" stroke="#8A6A4A" stroke-width="4"/>
+  <path d="M632 168L649 138L666 168Z" fill="#9FB8D9"/><circle cx="662" cy="132" r="7" fill="#F2C94C"/>
+
+  <!-- ต้นไม้ในกระถาง -->
+  <path d="M346 346L352 312H382L388 346Z" fill="#D98A7A"/>
+  <g class="a-plant"><g fill="#5FA777"><ellipse cx="357" cy="292" rx="11" ry="24" transform="rotate(-20 357 292)"/><ellipse cx="368" cy="286" rx="11" ry="28"/><ellipse cx="380" cy="294" rx="10" ry="22" transform="rotate(22 380 294)"/></g></g>
+
+  <!-- โต๊ะข้างเตียงและโคมไฟ -->
+  <rect x="396" y="296" width="44" height="52" rx="5" fill="#B98757"/>
+  <rect x="402" y="306" width="32" height="14" rx="3" fill="#A8774F"/>
+  <rect x="416" y="262" width="4" height="34" fill="#8A6A4A"/>
+  <path d="M396 262L440 262L430 232H406Z" fill="#FFE9A8" stroke="#CDB088" stroke-width="2"/>
+
+  <!-- เตียงคู่ -->
+  <rect x="446" y="196" width="298" height="112" rx="22" fill="#8F78B8"/>
+  <rect x="446" y="292" width="298" height="58" rx="10" fill="#7D669F"/>
+  <rect x="440" y="300" width="310" height="44" rx="14" fill="#F4EEFA"/>
+  <rect x="440" y="318" width="310" height="32" rx="12" fill="#9FB8D9"/>
+  <path d="M440 332H750" stroke="#8AA6CC" stroke-width="3"/>
+  <rect x="462" y="280" width="104" height="34" rx="16" fill="#FFF8EA" stroke="#E2D7C2" stroke-width="2"/>
+  <rect x="624" y="280" width="104" height="34" rx="16" fill="#FFF8EA" stroke="#E2D7C2" stroke-width="2"/>
+  <rect x="452" y="346" width="12" height="10" rx="3" fill="#8A6A4A"/><rect x="726" y="346" width="12" height="10" rx="3" fill="#8A6A4A"/>
+  <!-- คานไม้เพดาน -->
+  <rect y="0" width="800" height="12" fill="#A8774F"/><rect y="12" width="800" height="3" fill="#8A5F3C" opacity=".6"/>
+  <!-- ชั้นหนังสือสูงมุมซ้าย -->
+  <g>
+    <rect x="2" y="150" width="46" height="196" rx="3" fill="#B98757" stroke="#8A5F3C" stroke-width="2"/>
+    <rect x="7" y="158" width="36" height="182" fill="#9C6B43"/>
+    <g stroke="#8A5F3C" stroke-width="3"><line x1="6" y1="204" x2="44" y2="204"/><line x1="6" y1="252" x2="44" y2="252"/><line x1="6" y1="300" x2="44" y2="300"/></g>
+    <rect x="9" y="176" width="7" height="26" fill="#E0607E"/><rect x="17" y="180" width="6" height="22" fill="#F2C94C"/><rect x="24" y="172" width="7" height="30" fill="#6FB6DC"/><rect x="32" y="182" width="9" height="20" fill="#7C9F6A" transform="rotate(-10 36 192)"/>
+    <path d="M14 250 Q12 230 22 222 Q26 236 22 250Z" fill="#6FAE6A"/><path d="M22 250 Q30 228 40 232 Q34 244 26 250Z" fill="#5FA05A"/><rect x="12" y="238" width="24" height="12" rx="3" fill="#D98A7A"/>
+    <rect x="10" y="272" width="26" height="26" rx="4" fill="#F7EBD7" stroke="#CDB088"/><circle cx="23" cy="285" r="6" fill="#F2A65A"/>
+    <rect x="9" y="316" width="30" height="8" rx="2" fill="#6FB6DC"/><rect x="11" y="308" width="26" height="8" rx="2" fill="#E8893A"/><rect x="8" y="324" width="32" height="10" rx="2" fill="#7C4DDB" opacity=".8"/>
+  </g>
+  <!-- ผนังไม้ใต้หน้าต่าง -->
+  <g fill="none" stroke="#CDB088" stroke-width="2" opacity=".8"><rect x="134" y="282" width="52" height="46" rx="3"/><rect x="194" y="282" width="52" height="46" rx="3"/><rect x="254" y="282" width="52" height="46" rx="3"/></g>
+  <!-- แสงจากหน้าต่างตกบนพื้น -->
+  <path class="a-beam" d="M120 346 L320 346 L470 500 L150 500Z" fill="#FFF3D6" opacity=".14"/>
+  <!-- ลายพรม -->
+  <g fill="#DCE8F7" opacity=".55"><path d="M540 394 l14 14 -14 14 -14 -14z"/><path d="M470 400 l8 8 -8 8 -8 -8z"/><path d="M610 400 l8 8 -8 8 -8 -8z"/><path d="M410 404 l5 5 -5 5 -5 -5z"/><path d="M670 404 l5 5 -5 5 -5 -5z"/></g>
+  <!-- รองเท้าแตะหน้าเตียง -->
+  <g><ellipse cx="610" cy="386" rx="14" ry="6" fill="#F4B6C2" stroke="#C98894" stroke-width="1.5"/><ellipse cx="640" cy="390" rx="14" ry="6" fill="#F4B6C2" stroke="#C98894" stroke-width="1.5"/></g>
+  <!-- ไฟประดับเรืองแสง -->
+  <g fill="#FFE9A8" opacity=".35"><circle cx="420" cy="58" r="13"/><circle cx="465" cy="66" r="13"/><circle cx="510" cy="58" r="13"/><circle cx="560" cy="62" r="13"/><circle cx="610" cy="68" r="13"/><circle cx="655" cy="62" r="13"/><circle cx="705" cy="62" r="13"/><circle cx="748" cy="56" r="13"/></g>
+  <!-- ขอบห้องมืดลงนิดๆ ให้ดูอบอุ่น -->
+  <defs><radialGradient id="vg" cx="50%" cy="45%" r="75%"><stop offset=".6" stop-color="#3A2010" stop-opacity="0"/><stop offset="1" stop-color="#3A2010" stop-opacity=".22"/></radialGradient></defs>
+  <rect width="800" height="500" fill="url(#vg)"/>
+</svg>
