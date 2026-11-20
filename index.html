@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="th" data-season="summer">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>2gether</title>
+  <meta name="description" content="ที่ของเราสองคน">
+  <!-- เครื่องเล่น YouTube ต้องรู้ว่ามาจากเว็บไหน ไม่งั้นจะขึ้น Error 153 -->
+  <meta name="referrer" content="strict-origin-when-cross-origin">
+  <meta name="theme-color" content="#E2F5EF">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="icon" href="icons/icon.svg" type="image/svg+xml">
+  <link rel="apple-touch-icon" href="icons/apple-touch-icon.png">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-title" content="2gether">
+  <link rel="preload" href="fonts/itim-thai-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="fonts/itim-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <canvas id="ambient" aria-hidden="true"></canvas>
+  <div id="app"><div class="boot-wait" role="status"><span class="boot-heart" aria-hidden="true"></span><p>กำลังเปิดบ้าน...</p></div></div>
+  <noscript>เว็บนี้ต้องเปิด JavaScript</noscript>
+  <script>
+    // กันจอขาว: ถ้าแอปไม่ขึ้นใน 15 วินาที (โหลดไฟล์ไม่ได้ / เน็ตค้าง / ไฟล์เก่าค้างในเครื่อง) ให้ปุ่มแก้เอง
+    (function () {
+      var errs = [];
+      window.addEventListener('error', function (e) { errs.push((e.message || (e.target && e.target.src) || 'load error') + ''); }, true);
+      window.addEventListener('unhandledrejection', function (e) { errs.push(String(e.reason && (e.reason.message || e.reason))); });
+      window.__bootDone = function () { clearTimeout(window.__bootT); };
+      window.__bootT = setTimeout(function () {
+        var app = document.getElementById('app');
+        if (!app || !app.querySelector('.boot-wait')) return;
+        app.innerHTML = '<main class="auth boot-fail"><h1 class="display">เปิดบ้านไม่สำเร็จ</h1>' +
+          '<p class="lead">เน็ตอาจช้า หรือมีไฟล์เก่าค้างในเครื่อง ลองกดปุ่มด้านล่าง</p>' +
+          '<button class="btn primary block" id="bootRetry" type="button">ลองใหม่</button>' +
+          '<button class="btn block" id="bootClean" type="button" style="margin-top:.75rem">ล้างไฟล์เก่าแล้วเปิดใหม่</button>' +
+          (errs.length ? '<p class="hint" style="margin-top:1rem;word-break:break-all">รายละเอียด: ' + errs.slice(-3).join(' | ').replace(/</g, '&lt;') + '</p>' : '') + '</main>';
+        document.getElementById('bootRetry').onclick = function () { location.reload(); };
+        document.getElementById('bootClean').onclick = function () {
+          var jobs = [];
+          if (navigator.serviceWorker) jobs.push(navigator.serviceWorker.getRegistrations().then(function (rs) { return Promise.all(rs.map(function (r) { return r.unregister(); })); }));
+          if (window.caches) jobs.push(caches.keys().then(function (ks) { return Promise.all(ks.map(function (k) { return caches.delete(k); })); }));
+          Promise.all(jobs).catch(function () {}).then(function () { location.reload(); });
+        };
+      }, 15000);
+    })();
+  </script>
+  <script type="module" src="js/app.js"></script>
+</body>
+</html>
